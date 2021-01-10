@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+        <nav>
+            <ul class="main-nav">
+                <ul class="rows">
+                    <li><button onclick="addRow()" class="add">Add Row</button></li>
+                    <li><button onclick ="removeRow()" class="remove">Remove Row</button></li>
+                </ul>
+                <ul class ="colors">
+                    <li><button id="fillAll">Fill All</button></li>
+                    <li><button id="fillAllUnc">Fill All Uncolored</button></li>
+                    <li>
+                        <select id="colorSel">
+                            <option>Red</option>
+                            <option>Green</option>
+                            <option>Blue</option>
+
+                        </select>
+                    </li>
+                    <li><button id="clearAll">Clear All</button></li>
+                </ul>
+                <ul class="columns">
+                    <li><button onclick="addColumn()" class="add">Add Column</button></li>
+                    <li><button onclick="removeColumn()" class="remove">Remove Column</button></li>
+                </ul>
+            </ul>
+        <nav/>
+
+        <table id="myTable">
+            <tr>
+                <td id="firstCell" class="uncolored">&nbsp;</td>
+                
+            </tr>
+        </table>
+
+        <script src="script.js"></script>
+  </body>
+</html>
